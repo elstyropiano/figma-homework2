@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>First responsive login form</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="left">
+          <div class="content">
+            <h1>Zarejestruj się</h1>
+            <a href="https://www.facebook.com">
+              <button class="button"><img src="images/facebook.png" alt="facebook" />Rejestracja przez Facebook</button>
+            </a>
+            <a href="https://www.instagram.com">
+              <button class="button">
+                <img src="images/instagram.png" alt="instagram" />Rejestracja przez Instagram
+              </button>
+            </a>
+            <div class="line-container">
+              <div></div>
+              <span class="span1">Lub za pomoca maila</span>
+              <div></div>
+            </div>
+            <form action="form.php" method="POST">
+              <div class="inputs-name">
+                <div class="input-container">
+                  <label for="name">First Name</label>
+                  <input type="text" id="name" name="Name" placeholder="First Name" />
+                </div>
+                <div class="input-container">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" id="lastname" name="LastName" placeholder="Last Name" />
+                </div>
+              </div>
+
+              <div class="input-container">
+                <label for="email">Email Adress</label>
+                <input type="email" id="email" name="email" placeholder="Email Adress" />
+              </div>
+              <div class="input-container">
+                 
+                <label for="password">First Name</label>
+                <input type="password" id="password" name="password" placeholder="Password" pattern=".{6,}" oninvalid="setCustomValidity('Minimum length is 6 characters')" required />
+              </div>
+             
+
+              <input type="checkbox" id="checkbox" name="Terms" />
+              <label for="checkbox">I have read the <a class="link" href="#">Terms & Condition</a></label>
+              <button class="button registry" type="submit">Zarejestruj za darmo</button>
+            </form>
+            <div class="line"></div>
+            <span class="span2">Masz już konto?<a class="link" href="#">Zaloguj się</a></span>
+          </div>
+        </div>
+
+        <div class="right">
+          <img class="background-img" src="images/login1.png" alt="graphic1" />
+          <img class="background-img-2" src="images/login2.png" alt="graphic1" >
+          <img class="logo" src="images/logo.png" alt="graphic2" /></div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

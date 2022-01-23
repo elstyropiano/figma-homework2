@@ -28,7 +28,7 @@ body {
   flex: 0.633;
 }
 .content h1 {
-  font-size: 1, 71rem;
+  font-size: 1.71rem;
 }
 /* registry button fb/instagram and submit / start */
 .button {
@@ -183,8 +183,15 @@ input[type="text"],
 /* right side / end */
 /* RWD / start */
 @media screen and (max-width: 768px) {
+  body {
+    overflow-y: visible;
+  }
   .container {
     flex-direction: column-reverse;
+  }
+
+  .right {
+    width: 100%;
   }
   .background-img {
     display: none;
@@ -195,19 +202,21 @@ input[type="text"],
     background: rgba(40, 70, 66, 0.6);
     mix-blend-mode: multiply;
   }
-  .right {
-    width: 100%;
-  }
-  .left {
-    width: 100%;
-  }
   .logo {
     left: 2rem;
     height: 69%;
     width: 37.5%;
   }
+  .left {
+    width: 100%;
+  }
   .content {
     flex: 0.8;
   }
+  .inputs-name {
+    flex-direction: column;
+    gap: 0;
+  }
 }
+
 /* RWD / end */

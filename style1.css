@@ -78,6 +78,10 @@ a:link {
   font-weight: 700;
   margin: 1.42rem 0;
 }
+#error {
+  color: red;
+  margin: 0 0 1rem 0;
+}
 
 /* span between lines / start */
 .line-container {
@@ -106,8 +110,8 @@ a:link {
 /* inputs style:all / start */
 .input-container label {
   position: absolute;
-  left: 1.07rem;
-  top: -0.428rem;
+  left: 15px;
+  top: -5px;
   font-size: 0.714rem;
   padding: 0 0.214rem;
   background-color: white;
